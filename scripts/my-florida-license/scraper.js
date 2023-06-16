@@ -133,7 +133,7 @@ async function getProductObjectsPaginated(page, formObject, pageTotal)  {
 async function getLinksByFormObject(formObject)   {
 
     let startingPointUrl = "https://www.myfloridalicense.com/wl11.asp?mode=1&search=LicTyp&SID=&brd=&typ=",
-        browser = await puppeteer.launch({headless : false}),
+        browser = await puppeteer.launch({headless : true}),
         page = await browser.newPage();
         
 
